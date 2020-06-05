@@ -46,3 +46,14 @@
     transform: translate(-50%,-50%);
 }
 ```
+##### 去除input默认样式(包括IOS中input的默认阴影)
+```css
+input{
+  box-shadow:none; /*去除阴影*/
+  outline: none;/*聚焦input的蓝色边框*/
+  resize: none; /*textarea 禁止拖拽*/
+  border: none; /*去除边框*/
+  -webkit-appearance: none;/*常用于IOS下移除原生样式*/
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /*点击高亮的颜色*/
+}
+```
