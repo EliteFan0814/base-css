@@ -10,6 +10,7 @@
 }
 <!--多行省略-->
 .multiple-lines-omit {
+    overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
