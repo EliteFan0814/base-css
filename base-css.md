@@ -58,3 +58,22 @@ input{
   -webkit-tap-highlight-color: rgba(0,0,0,0); /*点击高亮的颜色*/
 }
 ```
+##### 取消父子元素的透明度传递
+父元素使用rgba就可以避免：
+```css
+.parent{
+  background:rgba(216,241,250,0.82);
+}
+.child{
+  background:red;
+}
+```
+
+
+
+
+
+
+
+
+
