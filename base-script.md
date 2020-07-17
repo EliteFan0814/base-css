@@ -16,3 +16,40 @@ const sliceArray = function(targetArray,number){
   return returnArr
 }
 ```
+##### 将对象转换为数组
+###### 方式1
+示例：{userName:'elite',local:'china'} =>[{name:'userName',value:'elite'},{name:'local',value:'china'}]
+```js
+const objTransToArray = function(obj){
+   let arr = [];
+   Object.keys(obj).forEach(itemKey => {
+     let o = {};
+     o.name = itemKey
+     o.value = obj[itemKey]
+     arr.push(o)
+   })
+    return arr
+}
+```
+###### 方式2
+示例：{userName:'elite',local:'china'} =>[{userName:'elite'},{local:'china'}]
+```js
+const objTransToArray = function(obj){
+   let arr = [];
+   Object.keys(obj).forEach(itemKey => {
+     let o = {};
+     o[itemKey] = obj[itemKey]
+     arr.push(o)
+   })
+    return arr
+}
+```
+
+
+
+
+
+
+
+
+
