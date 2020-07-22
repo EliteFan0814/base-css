@@ -68,36 +68,43 @@ input{
   background:red;
 }
 ```
-##### 文字两边对齐(基础版)
+##### 单行文字两边对齐(兼容ios)
 ```html
-<div class="item-wrap">
-  <div class="left-name">
-    <div class="name">姓名</div>：
+  <div class="item-wrap">
+    <div class="left-name">
+      <div class="name">姓名</div>：
+    </div>
+    <div class="ight-value">
+      武大郎
+    </div>
   </div>
-  <div class="ight-value">
-    武大郎
+  <div class="item-wrap">
+    <div class="left-name">
+      <div class="name">所在城市</div>：
+    </div>
+    <div class="ight-value">
+      李家窝棚
+    </div>
   </div>
-</div>
-<div class="item-wrap">
-  <div class="left-name">
-    <div class="name">每个月的工资是多少</div>：
-  </div>
-  <div class="ight-value">
-    1000
-  </div>
-</div>
 ```
 ```css
-.item-wrap,.left-name {
+.item-wrap,
+.left-name {
   display: flex;
-  align-items: center;
+  font-size:24px;
+  line-height:30px;
 }
 .left-name .name {
-/* 这里一定要使用 width 不能使用 min-width max-width */
-  width: 100px;
+  width: 100px;  /* 这里一定要使用 width 不能使用 min-width max-width */
+  height:30px;  /* 一定要限定高度，高度和 line-height 一致时为上下居中显示 */
   text-align: justify;
   text-align-last: justify;
   text-justify: inter-ideograph;
+}
+.left-name .name::after {
+  display: inline-block;
+  content: '';
+  width: 100%;
 }
 ```
 
