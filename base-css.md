@@ -69,6 +69,7 @@ input{
 }
 ```
 ##### 单行文字两边对齐(兼容ios)
+html 代码：
 ```html
   <div class="item-wrap">
     <div class="left-name">
@@ -87,6 +88,7 @@ input{
     </div>
   </div>
 ```
+css 代码：
 ```css
 .item-wrap,
 .left-name {
