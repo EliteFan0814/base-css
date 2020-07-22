@@ -68,6 +68,59 @@ input{
   background:red;
 }
 ```
+##### 文字两边对齐(基础版)
+```html
+<div class="item-wrap">
+  <div class="left-name">
+    <div class="name">姓名</div>：
+  </div>
+  <div class="ight-value">
+    武大郎
+  </div>
+</div>
+<div class="item-wrap">
+  <div class="left-name">
+    <div class="name">每个月的工资是多少</div>：
+  </div>
+  <div class="ight-value">
+    1000
+  </div>
+</div>
+```
+```css
+.item-wrap,.left-name {
+  display: flex;
+  align-items: center;
+}
+.left-name .name {
+/* 这里一定要使用 width 不能使用 min-width max-width */
+  width: 100px;
+  text-align: justify;
+  text-align-last: justify;
+  text-justify: inter-ideograph;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
