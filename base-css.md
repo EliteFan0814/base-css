@@ -83,7 +83,7 @@ html 代码：
     <div class="left-name">
       <div class="name">所在城市</div>：
     </div>
-    <div class="ight-value">
+    <div class="right-value">
       李家窝棚
     </div>
   </div>
