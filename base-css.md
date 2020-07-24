@@ -109,7 +109,17 @@ css 代码：
   width: 100%;
 }
 ```
-
+##### 隐藏滚动条
+```css
+div{
+ width: 24rem;
+ height: 20rem;
+ overflow: scroll;
+}
+div::-webkit-scrollbar {
+ display: none;
+}
+```
 
 
 
