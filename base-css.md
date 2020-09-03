@@ -121,6 +121,7 @@ div::-webkit-scrollbar {
 }
 ```
 ##### 固定底部无限加载
+```css
 div{
  box-sizing: border-box;
  width: 100%;
@@ -129,6 +130,8 @@ div{
  bottom: 0;
  overflow-y: scroll;
 }
+```
+
 
 
 
