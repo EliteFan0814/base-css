@@ -120,6 +120,15 @@ div::-webkit-scrollbar {
  display: none;
 }
 ```
+##### 固定底部无限加载
+div{
+ box-sizing: border-box;
+ width: 100%;
+ position: fixed;
+ top: 10rem;
+ bottom: 0;
+ overflow-y: scroll;
+}
 
 
 
