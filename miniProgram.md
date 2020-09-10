@@ -13,3 +13,11 @@
   ]
 }
 ```
+##### .gitignore中也可添加忽略sass缓存文件
+```
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+*.css
+```
