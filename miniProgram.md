@@ -1,4 +1,4 @@
-##### vscode中使用scss
+#### vscode中使用scss
 1. 首先在vscode中安装插件 easySass
 2. 在项目根目录创建 .vscode 文件夹
 3. 在 .vscode 文件夹内创建 settings.json
