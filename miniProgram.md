@@ -1,4 +1,4 @@
-#### vscode中使用scss
+#### vscode中编辑微信小程序使用scss时，实时转换为.wxss / vscode中使用scss
 1. 首先在vscode中安装插件 easySass
 2. 在vscode首选项中找到 settings.json 配置文件
 3. 在settings.json配置文件中添加如下代码 
