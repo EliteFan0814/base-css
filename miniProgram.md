@@ -1,19 +1,34 @@
 #### vscode中使用scss
 1. 首先在vscode中安装插件 easySass
 2. 在项目根目录创建 .vscode 文件夹
-3. 在 .vscode 文件夹内创建 settings.json
-4. settings.json 内容如下  
+3. 在vscode的settings.json配置文件中添加如下代码 
 ```json
 {
   "easysass.formats": [
     {
-      "format": "expanded", // 没有缩进的、扩展的css代码
-      "extension": ".wxss" //转化的后缀名
+      "format": "expanded", // 转化样式：没有缩进的、扩展的css代码
+      "extension": ".wxss" // sass/scss文件要转化的后缀名
     }
   ]
 }
 ```
-5. 顺便在.gitignore中也可添加忽略sass缓存文件
+4. 同时也支持转化为.css .min.css等格式，只需再次添加配置就行：
+```json
+{
+  "easysass.formats": [
+   // ~~~省略~~~
+    {
+      "format": "expanded",
+      "extension": ".css"
+    },
+    {
+      "format": "compressed",
+      "extension": ".min.css"
+    }
+  ]
+}
+```
+5. 顺便在.gitignore中也可添加忽略sass缓存文件的配置
 ```
 .sass-cache/
 *.css.map
