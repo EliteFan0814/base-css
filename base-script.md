@@ -45,7 +45,16 @@ const objTransToArray = function(obj){
 }
 ```
 
-##### 判断数据类型（支持14种数据类型）
+##### 判断数据类型
+###### 方法1 返回值为Boolean值
+```js
+const checkType = function (yourData,dataType) {
+  const type = Object.prototype.toString.call(yourData).slice(8, -1)
+  const typeList = ['Number','String']
+  return type === dataType
+}
+```
+###### 方法2 返回值为数据类型
 ```js
 const checkdataType = function (yourData) {
   const type = Object.prototype.toString.call(yourData).slice(8, -1)
