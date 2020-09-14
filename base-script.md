@@ -50,7 +50,6 @@ const objTransToArray = function(obj){
 ```js
 const checkType = function (yourData,dataType) {
   const type = Object.prototype.toString.call(yourData).slice(8, -1)
-  const typeList = ['Number','String']
   return type === dataType
 }
 ```
