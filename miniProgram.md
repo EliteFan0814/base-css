@@ -36,3 +36,10 @@
 *.scss.map
 *.css
 ```
+
+#### 小程序中 px 和 rpx 互相转化
+px = rpx / 750 * wx.getSystemInfoSync().windowWidth
+rpx = px * 750 / wx.getSystemInfoSync().windowWidth
+注：  
+wx.getSystemInfoSync().windowWidth 单位为 px  
+[小程序获取系统信息](https://developers.weixin.qq.com/miniprogram/dev/api/base/system/system-info/wx.getSystemInfoSync.html)  
