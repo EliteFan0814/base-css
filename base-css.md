@@ -69,13 +69,14 @@ input{
 }
 ```
 ##### 单行文字两边对齐(兼容ios)
-html 代码：
+*这里注意左边的 key 值是否带分号，分号也算一个字符！  
+html 代码如下：
 ```html
   <div class="item-wrap">
     <div class="left-name">
       <div class="name">姓名</div>：
     </div>
-    <div class="ight-value">
+    <div class="right-value">
       武大郎
     </div>
   </div>
