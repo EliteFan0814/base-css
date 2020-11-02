@@ -16,7 +16,7 @@ const sliceArray = function(targetArray,number){
   return returnArr
 }
 ```
-###### 限制只能传入数字
+##### 限制只能传入数字
 ```js
 // valStr 确保是一个字符串类型
 const limitToNumberStr = function(valStr) {
