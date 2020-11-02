@@ -16,6 +16,18 @@ const sliceArray = function(targetArray,number){
   return returnArr
 }
 ```
+###### 限制只能传入数字
+```js
+// valStr 确保是一个字符串类型
+const limitToNumberStr = function(valStr) {
+  let tempValue = valStr.toString()
+  return tempValue
+    .replace(/[^0-9.]/g, '')
+    .replace('.', '#*')
+    .replace(/\./g, '')
+    .replace('#*', '.')
+}
+```
 ##### 将对象转换为数组
 ###### 方式1
 示例：{userName:'elite',local:'china'} =>[{name:'userName',value:'elite'},{name:'local',value:'china'}]
@@ -48,6 +60,8 @@ const objTransToArray = function(obj){
 ##### 判断数据类型
 ###### 方法1 返回值为Boolean值
 ```js
+// yourData 传入的数据
+// dataType 要验证的数据类型，例如 String Number
 const checkType = function (yourData,dataType) {
   const type = Object.prototype.toString.call(yourData).slice(8, -1)
   return type === dataType
